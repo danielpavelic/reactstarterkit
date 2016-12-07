@@ -13,7 +13,11 @@
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "clean-dist": "rimraf ./dist && mkdir dist",
+    "prebuild": "npm-run-all clean-dist test lint",
+    "build": "babel-node buildScripts/build.js",
+    "postbuild": "babel-node buildScripts/distServer.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +30,9 @@
   },
   "homepage": "https://github.com/danielpavelic/reactstarterkit#readme",
   "dependencies": {
+    "compression": "^1.6.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "whatwg-fetch": "^2.0.1"
   },
   "devDependencies": {
     "babel-cli": "6.18.0",
