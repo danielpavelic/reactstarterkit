@@ -1,7 +1,7 @@
 {
-  "name": "reactstarterkit",
+  "name": "starterkit",
   "version": "1.0.0",
-  "description": "React starter kit",
+  "description": "Starter kit",
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielpavelic/reactstarterkit.git"
+    "url": "git+https://github.com/danielpavelic/starterkit.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/danielpavelic/reactstarterkit/issues"
+    "url": "https://github.com/danielpavelic/starterkit/issues"
   },
-  "homepage": "https://github.com/danielpavelic/reactstarterkit#readme",
+  "homepage": "https://github.com/danielpavelic/starterkit#readme",
   "dependencies": {
     "compression": "^1.6.2",
     "extract-text-webpack-plugin": "^1.0.1",
