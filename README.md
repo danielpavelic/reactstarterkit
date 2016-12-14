@@ -12,6 +12,9 @@ Technology Independent Starter Kit based on node.js
 9. CI Integration
 10. Production Building
 
+npm start -s
+npm run build -s
+
 "scripts": {
   "prestart": "babel-node buildScripts/startMessage.js",
   "start": "npm-run-all --parallel security-check open:src lint:watch test:watch",
