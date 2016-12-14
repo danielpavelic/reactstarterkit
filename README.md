@@ -1,5 +1,4 @@
-# reactstarterkit
-Starter Kit
+# Starter Kit
 Technology Independent Starter Kit based on node.js
 
 1. Editor configuration
